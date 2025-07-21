@@ -1,3 +1,4 @@
+
 /* Estilos base */
 
 /* Estiliza a lista de navegação: usa flexbox, espaçamento entre itens, remove marcadores e margens/paddings */
@@ -279,5 +280,379 @@ button [type="submit"]:hover{
 /* Parágrafos do rodapé com margem vertical pequena */
 .rodape p {
     margin: 5px 0;
+}
+
+=======
+/* Estilos base */
+
+/* Estiliza a lista de navegação: usa flexbox, espaçamento entre itens, remove marcadores e margens/paddings */
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+/* Estiliza os links dentro da lista de navegação: remove sublinhado, cor, peso da fonte, espaçamento interno, borda arredondada e adiciona transição */
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Estiliza especificamente o botão de contato dentro do menu, com cor de fundo azul, texto branco, sombra e maior padding */
+nav ul li a.btn-contato {
+  background-color: #6c63ff; /* azul destaque */
+  color: #fff;
+  font-weight: 700;
+  padding: 10px 18px;
+  box-shadow: 0 2px 8px rgba(108, 99, 255, 0.6);
+}
+
+/* Efeito hover para o botão de contato: escurece o azul e aumenta a sombra */
+nav ul li a.btn-contato:hover {
+  background-color: #5952d4; /* tom azul mais escuro no hover */
+  box-shadow: 0 3px 10px rgba(89, 82, 212, 0.8);
+}
+
+/* Reset geral de margens e paddings, e ajuste do box-sizing para incluir bordas no tamanho dos elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos básicos do corpo da página: fonte, cor de fundo clara e texto escuro */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f7f9fa;
+    color: #040505;
+}
+
+/* Cabeçalho: fundo azul claro e padding vertical */
+header {
+    background-color: #ADD8E6;
+    padding: 20px 0;
+}
+
+/* Container centralizado e com largura máxima, usando flexbox para distribuir itens com espaço entre e alinhamento vertical */
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Cor do título do header */
+header h1 {
+    color: white;
+}
+
+/* Estiliza a lista dentro da navegação: cor branca, sem decoração e fonte em negrito */
+nav ul {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Banner: imagem de fundo centralizada e coberta, altura de 80% da viewport, com conteúdo flexível e centralizado */
+.banner {
+  background: url('https://saudedigitalnews.com.br/wp-content/uploads/2023/10/PPGP-Psicologia-800x450-Foto-Getty-Images.jpg') no-repeat center;
+  background-size: cover;
+  min-height: 60vh;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+
+/* Estilo do título dentro do banner, tamanho grande e espaçamento inferior */
+.banner-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Parágrafo do banner com fonte média e espaçamento inferior */
+.banner-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Botão genérico: cor de fundo azul, texto branco, padding, arredondamento e transição suave */
+.btn {
+    background-color: #6cb3b9;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito hover para o botão: escurece o azul */
+.btn:hover {
+    background-color: #569a9e;
+}
+
+/* Seção Sobre nós: espaçamento interno reduzido, fundo branco, texto preto, largura limitada e centralizado, com sombra e cantos arredondados */
+.sobre {
+  padding: 30px 100px;       /* Menos espaço vertical */
+  background-color: #fff;   /* Fundo branco, para combinar */
+  color: #000;              /* Texto preto */
+  max-width: 900px;         /* Largura menor para ficar mais compacto */
+  margin: 0 auto 40px auto; /* Centralizado e espaçamento embaixo */
+  font-size: 16px;          /* Fonte menor e mais legível */
+  line-height: 1.5;         /* Espaçamento confortável entre linhas */
+  border-radius: 8px;       /* Cantos arredondados (opcional) */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Leve sombra (opcional) */
+}
+
+/* Título da seção Sobre com tamanho e cor */
+.sobre h2 {
+  font-size: 24px;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+/* Parágrafos da seção Sobre: tamanho, espaçamento entre linhas, cor cinza escuro, largura máxima e alinhamento central */
+.sobre p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #444;
+    max-width: 800px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+/* Seção Serviços: fundo branco, espaçamento interno e texto centralizado */
+.servicos {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Título da seção Serviços com tamanho e cor */
+.servicos h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* Container dos cartões de serviço: flexbox com quebra de linha e espaçamento */
+.cards-servicos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Estilo dos cartões individuais de serviço: fundo cinza claro, cantos arredondados, padding, largura fixa, sombra e transição */
+.cards {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+    transition: transform 0.3s ease;
+}
+
+/* Título dos cartões de serviço */
+.card h3 {
+    font-size: 22px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+/* Parágrafo dentro dos cartões com tamanho e cor */
+.card p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Contato: limita largura do container, centraliza e adiciona padding lateral */
+.contato .container {
+  max-width: 600px;      /* limita a largura para um tamanho agradável */
+  margin: 0 auto;        /* centraliza horizontalmente */
+  padding: 0 20px;       /* espaçamento lateral interno */
+}
+
+/* Formulário de contato: organiza em coluna e espaço entre os campos */
+.form-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Fundo e padding da seção contato */
+.contato {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+}
+
+/* Título da seção contato: centralizado, tamanho grande e cor */
+.contato h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* Define largura máxima, centraliza e organiza o formulário em coluna com espaçamento */
+.form-contato {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Campos do formulário: flex em coluna e alinhamento à esquerda */
+.campo {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+/* Labels dos campos com tamanho, margem inferior e cor */
+.campo label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+/* Inputs e textarea com padding, borda, cantos arredondados e tamanho da fonte */
+.campo input
+.campo textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* Botão de envio com padding, cor de fundo azul claro, cor do texto, sem borda, cantos arredondados, cursor pointer e transição */
+button[type="submit"] {
+    padding: 12px;
+    background-color: #ADD8E6;
+    color: rgba(97, 97, 97, 0.979);
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover do botão submit (nota: há um espaço a mais entre button e [type="submit"], cuidado) */
+button [type="submit"]:hover{
+    background-color: #ADD8E6;
+}
+
+/* Rodapé: fundo azul claro, cor do texto cinza, padding, texto centralizado e fonte pequena */
+.rodape {
+    background-color: #ADD8E6;
+    color: rgba(97, 97, 97, 0.979);
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Parágrafos do rodapé com margem vertical pequena */
+.rodape p {
+    margin: 5px 0;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .banner {
+    height: 60vh;
+    padding: 20px;
+  }
+
+  .banner-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .banner-content p {
+    font-size: 1rem;
+  }
+
+  .sobre {
+    padding: 20px;
+  }
+
+  .sobre h2 {
+    font-size: 20px;
+  }
+
+  .sobre p {
+    font-size: 1rem;
+  }
+
+  .cards-servicos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cards {
+  width: 100%;
+  max-width: 280px;
+
+  }
+
+  .contato .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .form-contato {
+    gap: 15px;
+  }
+
+  .contato h2 {
+    font-size: 24px;
+  }
+
+  button[type="submit"] {
+    font-size: 16px;
+  }
+
+  .rodape {
+    font-size: 12px;
+    padding: 15px;
+  }
+}
+.banner-content h2,
+.sobre h2,
+.servicos h2,
+.contato h2 {
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
